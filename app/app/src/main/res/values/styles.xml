@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryDark">@color/green</item>
+        <item name="colorAccent">@color/green</item>
+        <item name="colorControlNormal">@color/green</item>
+    </style>
+    <style name="check">
+        <item name="android:button">@drawable/select_checkbox</item>
+    </style>
+    <style name="circlecheck">
+        <item name="android:button">@drawable/circleselect_check</item>
+    </style>
+
+</resources>

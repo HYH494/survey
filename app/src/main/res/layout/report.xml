@@ -16,124 +16,26 @@
         android:textColor="@color/black"/>
 
     <TextView
-        android:id="@+id/q1_answer"
-        android:layout_width="match_parent"
+        android:id="@+id/show_answer"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="60dp"
         android:layout_marginRight="60dp"
-        android:layout_marginTop="15dp"
-        android:text="Q1："
-        android:textSize="20sp" />
-    <TextView
-        android:id="@+id/q2_answer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="60dp"
-        android:layout_marginRight="60dp"
-        android:layout_marginTop="12dp"
-        android:text="Q2："
-        android:textSize="20sp" />
-    <TextView
-        android:id="@+id/q3_answer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="60dp"
-        android:layout_marginRight="60dp"
-        android:layout_marginTop="12dp"
-        android:text="Q3："
-        android:textSize="20sp" />
-    <TextView
-        android:id="@+id/q4_answer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="60dp"
-        android:layout_marginRight="60dp"
-        android:layout_marginTop="12dp"
-        android:text="Q4："
-        android:textSize="20sp" />
-    <TextView
-        android:id="@+id/q5_answer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="60dp"
-        android:layout_marginRight="60dp"
-        android:layout_marginTop="12dp"
-        android:text="Q5："
-        android:textSize="20sp" />
-    <TextView
-        android:id="@+id/q6_answer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="60dp"
-        android:layout_marginRight="60dp"
-        android:layout_marginTop="12dp"
-        android:text="Q6："
-        android:textSize="20sp" />
-    <TextView
-        android:id="@+id/q7_answer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="60dp"
-        android:layout_marginRight="60dp"
-        android:layout_marginTop="12dp"
-        android:text="Q7："
-        android:textSize="20sp" />
-    <TextView
-        android:id="@+id/q8_answer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="60dp"
-        android:layout_marginRight="60dp"
-        android:layout_marginTop="12dp"
-        android:text="Q8："
-        android:textSize="20sp" />
-    <TextView
-        android:id="@+id/q9_answer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="60dp"
-        android:layout_marginRight="60dp"
-        android:layout_marginTop="12dp"
-        android:text="Q9："
-        android:textSize="20sp" />
-    <TextView
-        android:id="@+id/q10_answer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="60dp"
-        android:layout_marginRight="60dp"
-        android:layout_marginTop="12dp"
-        android:text="Q10："
-        android:textSize="20sp" />
-    <TextView
-        android:id="@+id/q11_answer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="60dp"
-        android:layout_marginRight="60dp"
-        android:layout_marginTop="12dp"
-        android:text="Q11："
-        android:textSize="20sp" />
-    <TextView
-        android:id="@+id/q12_answer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="60dp"
-        android:layout_marginRight="60dp"
-        android:layout_marginTop="12dp"
-        android:text="Q12："
+        android:layout_marginTop="20dp"
+        android:scrollbars="vertical"
+        android:maxLines="18"
         android:textSize="20sp" />
 
     <Button
-        android:id="@+id/q5_next"
+        android:id="@+id/report"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:text="EXIT"
-        android:textSize="20sp"
+        android:layout_marginTop="30dp"
         android:background="@color/green"
-        android:textColor="@color/black"/>
+        android:text="SAVE AND EXIT"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
     <!-- END    : Your code should be within this block -->
 </LinearLayout>

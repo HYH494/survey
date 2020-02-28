@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.*;
 
-public class question_five extends AppCompatActivity {
+public class Question_five extends AppCompatActivity {
     Button q5_next;
     int count = 0;
     CheckBox b1,b2,b3,b4,b5,b6,b7;
@@ -156,9 +156,9 @@ public class question_five extends AppCompatActivity {
                     ct8 += 1;
                     if(ct8 > 0 && count > 0)
                     {
-                        Intent intent = new Intent(question_five.this,question_six.class);
+                        Intent intent = new Intent(Question_five.this,Question_six.class);
                         intent.putExtra("inputArr", new String[]{inputArr[0],inputArr[1],inputArr[2],inputArr[3],
-                        q5input});
+                                q5input});
                         startActivity(intent);
                     }
 

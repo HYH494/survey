@@ -13,7 +13,7 @@
         android:layout_marginRight="20dp"
         android:text="Question 5"
         android:textSize="36sp"
-        android:textColor="#000000"/>
+        android:textColor="@color/black"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -29,63 +29,63 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="90dp"
-        android:colorControlActivated="#00ff00"
+        android:colorControlActivated="@color/green"
         android:text="Music functions"
-        android:textColor="#000000"/>
+        android:textColor="@color/black"/>
     <CheckBox
         android:id="@+id/q5_photofunc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="90dp"
-        android:colorControlActivated="#00ff00"
+        android:colorControlActivated="@color/green"
         android:text="Photo funcions"
-        android:textColor="#000000"/>
+        android:textColor="@color/black"/>
     <CheckBox
         android:id="@+id/q5_gamefunc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="90dp"
-        android:colorControlActivated="#00ff00"
+        android:colorControlActivated="@color/green"
         android:text="Game functions"
-        android:textColor="#000000"/>
+        android:textColor="@color/black"/>
     <CheckBox
         android:id="@+id/q5_businessfunc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="90dp"
-        android:colorControlActivated="#00ff00"
+        android:colorControlActivated="@color/green"
         android:text="Business functions(Word,Excel,ect)"
-        android:textColor="#000000"/>
+        android:textColor="@color/black"/>
     <CheckBox
         android:id="@+id/q5_gpsfunc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="90dp"
-        android:colorControlActivated="#00ff00"
+        android:colorControlActivated="@color/green"
         android:text="GPS functions"
-        android:textColor="#000000"/>
+        android:textColor="@color/black"/>
     <CheckBox
         android:id="@+id/q5_datafunc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="90dp"
-        android:colorControlActivated="#00ff00"
+        android:colorControlActivated="@color/green"
         android:text="Data functions(Bluetooth,WLAN,ect)"
-        android:textColor="#000000"/>
+        android:textColor="@color/black"/>
     <CheckBox
         android:id="@+id/q5_others"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="90dp"
-        android:colorControlActivated="#00ff00"
+        android:colorControlActivated="@color/green"
         android:text="Others"
-        android:textColor="#000000"/>
+        android:textColor="@color/black"/>
     <Button
         android:id="@+id/q5_next"
         android:layout_width="match_parent"
@@ -95,8 +95,8 @@
         android:layout_marginRight="20dp"
         android:text="NEXT"
         android:textSize="20sp"
-        android:background="#00ff00"
-        android:textColor="#000000"/>
+        android:background="@color/green"
+        android:textColor="@color/black"/>
     <!-- END    : Your code should be within this block -->
 
 </LinearLayout>

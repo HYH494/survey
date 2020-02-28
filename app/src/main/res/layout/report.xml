@@ -13,7 +13,7 @@
         android:layout_marginRight="20dp"
         android:text="Your answers"
         android:textSize="36sp"
-        android:textColor="#000000"/>
+        android:textColor="@color/black"/>
 
     <TextView
         android:id="@+id/q1_answer"
@@ -133,7 +133,7 @@
         android:layout_marginRight="20dp"
         android:text="EXIT"
         android:textSize="20sp"
-        android:background="#00ff00"
-        android:textColor="#000000"/>
+        android:background="@color/green"
+        android:textColor="@color/black"/>
     <!-- END    : Your code should be within this block -->
 </LinearLayout>

@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.*;
 
-public class question_eleven extends AppCompatActivity {
+public class Question_eleven extends AppCompatActivity {
     Button q11_next;
     int count = 0;
     String[] inputArr;
@@ -43,7 +43,7 @@ public class question_eleven extends AppCompatActivity {
                 case R.id.q11_next:
                     if(count > 0)
                     {
-                        Intent intent = new Intent(question_eleven.this,question_twelve.class);
+                        Intent intent = new Intent(Question_eleven.this,Question_twelve.class);
                         intent.putExtra("inputArr", new String[]{inputArr[0],inputArr[1],
                                 inputArr[2],inputArr[3],inputArr[4],inputArr[5],inputArr[6],
                                 inputArr[7],inputArr[8],inputArr[9],q11input});

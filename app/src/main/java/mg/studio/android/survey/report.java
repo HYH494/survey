@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-public class report extends AppCompatActivity {
+public class Report extends AppCompatActivity {
     String[] inputArr;
     TextView textview1,textview2,textview3,textview4,
             textview5,textview6,textview7,textview8,
@@ -41,8 +41,8 @@ public class report extends AppCompatActivity {
         textview12.setText(textview12.getText().toString()+ inputArr[11]);
         //String temp;
         //for(int i = 0;i<12;i++){
-            //temp = textview[i].getText().toString()+ inputArr[i];
-            //textview[i].setText(temp);
+        //temp = textview[i].getText().toString()+ inputArr[i];
+        //textview[i].setText(temp);
         //}
     }
 }

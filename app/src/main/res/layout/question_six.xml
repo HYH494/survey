@@ -13,7 +13,7 @@
         android:layout_marginRight="20dp"
         android:text="Question 6"
         android:textSize="36sp"
-        android:textColor="#000000"/>
+        android:textColor="@color/black"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="60dp"
         android:layout_marginRight="60dp"
-        android:textColor="#000000"
+        android:textColor="@color/black"
         android:theme="@color/green"/>
     <Button
         android:id="@+id/q6_next"
@@ -40,8 +40,8 @@
         android:layout_marginRight="20dp"
         android:text="NEXT"
         android:textSize="20sp"
-        android:background="#00ff00"
-        android:textColor="#000000"/>
+        android:background="@color/green"
+        android:textColor="@color/black"/>
 
     <!-- END    : Your code should be within this block -->
 

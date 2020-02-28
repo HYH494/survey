@@ -13,7 +13,7 @@
         android:layout_marginRight="20dp"
         android:text="Question 8"
         android:textSize="36sp"
-        android:textColor="#000000"/>
+        android:textColor="@color/black"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -28,69 +28,69 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-    <RadioButton
-        android:id="@+id/q8_iphone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="105dp"
-        android:colorControlActivated="#00ff00"
-        android:text="Iphone"
-        android:textColor="#000000"/>
-    <RadioButton
-        android:id="@+id/q8_nokia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="105dp"
-        android:colorControlActivated="#00ff00"
-        android:text="Nokia"
-        android:textColor="#000000"/>
-    <RadioButton
-        android:id="@+id/q8_samsung"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="105dp"
-        android:colorControlActivated="#00ff00"
-        android:text="Samsung"
-        android:textColor="#000000"/>
-    <RadioButton
-        android:id="@+id/q8_mi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="105dp"
-        android:colorControlActivated="#00ff00"
-        android:text="MI"
-        android:textColor="#000000"/>
-    <RadioButton
-        android:id="@+id/q8_lenovo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="105dp"
-        android:colorControlActivated="#00ff00"
-        android:text="Lenovo"
-        android:textColor="#000000"/>
-    <RadioButton
-        android:id="@+id/q8_sony"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="105dp"
-        android:colorControlActivated="#00ff00"
-        android:text="Sony"
-        android:textColor="#000000"/>
-    <RadioButton
-        android:id="@+id/q8_others"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="105dp"
-        android:colorControlActivated="#00ff00"
-        android:text="Others"
-        android:textColor="#000000"/>
+        <RadioButton
+            android:id="@+id/q8_iphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="105dp"
+            android:colorControlActivated="@color/green"
+            android:text="Iphone"
+            android:textColor="@color/black"/>
+        <RadioButton
+            android:id="@+id/q8_nokia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="105dp"
+            android:colorControlActivated="@color/green"
+            android:text="Nokia"
+            android:textColor="@color/black"/>
+        <RadioButton
+            android:id="@+id/q8_samsung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="105dp"
+            android:colorControlActivated="@color/green"
+            android:text="Samsung"
+            android:textColor="@color/black"/>
+        <RadioButton
+            android:id="@+id/q8_mi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="105dp"
+            android:colorControlActivated="@color/green"
+            android:text="MI"
+            android:textColor="@color/black"/>
+        <RadioButton
+            android:id="@+id/q8_lenovo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="105dp"
+            android:colorControlActivated="@color/green"
+            android:text="Lenovo"
+            android:textColor="@color/black"/>
+        <RadioButton
+            android:id="@+id/q8_sony"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="105dp"
+            android:colorControlActivated="@color/green"
+            android:text="Sony"
+            android:textColor="@color/black"/>
+        <RadioButton
+            android:id="@+id/q8_others"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="105dp"
+            android:colorControlActivated="@color/green"
+            android:text="Others"
+            android:textColor="@color/black"/>
     </RadioGroup>
     <Button
         android:id="@+id/q8_next"
@@ -101,8 +101,8 @@
         android:layout_marginRight="20dp"
         android:text="NEXT"
         android:textSize="20sp"
-        android:background="#00ff00"
-        android:textColor="#000000"/>
+        android:background="@color/green"
+        android:textColor="@color/black"/>
     <!-- END    : Your code should be within this block -->
 
 </LinearLayout>

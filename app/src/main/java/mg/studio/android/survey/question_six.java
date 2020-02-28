@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.*;
 
-public class question_six extends AppCompatActivity {
+public class Question_six extends AppCompatActivity {
     Button q6_next;
     EditText editText;
     String[] inputArr;
@@ -30,7 +30,7 @@ public class question_six extends AppCompatActivity {
                     {
                         q6input = editText.getText().toString();
                         //editText.setText(inputArr[2]);
-                        Intent intent = new Intent(question_six.this,question_seven.class);
+                        Intent intent = new Intent(Question_six.this,Question_seven.class);
                         intent.putExtra("inputArr", new String[]{inputArr[0],inputArr[1],
                                 inputArr[2],inputArr[3],inputArr[4],q6input});
                         startActivity(intent);

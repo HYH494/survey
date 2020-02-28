@@ -13,7 +13,7 @@
         android:layout_marginRight="20dp"
         android:text="Question 9"
         android:textSize="36sp"
-        android:textColor="#000000"/>
+        android:textColor="@color/black"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -28,42 +28,42 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-    <RadioButton
-        android:id="@+id/q9_appearance"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="105dp"
-        android:colorControlActivated="#00ff00"
-        android:text="Appearance"
-        android:textColor="#000000"/>
-    <RadioButton
-        android:id="@+id/q9_price"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="105dp"
-        android:colorControlActivated="#00ff00"
-        android:text="Price"
-        android:textColor="#000000"/>
-    <RadioButton
-        android:id="@+id/q9_performance"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="105dp"
-        android:colorControlActivated="#00ff00"
-        android:text="Performance"
-        android:textColor="#000000"/>
-    <RadioButton
-        android:id="@+id/q9_Others"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="105dp"
-        android:colorControlActivated="#00ff00"
-        android:text="Others"
-        android:textColor="#000000"/>
+        <RadioButton
+            android:id="@+id/q9_appearance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="105dp"
+            android:colorControlActivated="@color/green"
+            android:text="Appearance"
+            android:textColor="@color/black"/>
+        <RadioButton
+            android:id="@+id/q9_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="105dp"
+            android:colorControlActivated="@color/green"
+            android:text="Price"
+            android:textColor="@color/black"/>
+        <RadioButton
+            android:id="@+id/q9_performance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="105dp"
+            android:colorControlActivated="@color/green"
+            android:text="Performance"
+            android:textColor="@color/black"/>
+        <RadioButton
+            android:id="@+id/q9_Others"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="105dp"
+            android:colorControlActivated="@color/green"
+            android:text="Others"
+            android:textColor="@color/black"/>
     </RadioGroup>
     <Button
         android:id="@+id/q9_next"
@@ -74,8 +74,8 @@
         android:layout_marginRight="20dp"
         android:text="NEXT"
         android:textSize="20sp"
-        android:background="#00ff00"
-        android:textColor="#000000"/>
+        android:background="@color/green"
+        android:textColor="@color/black"/>
     <!-- END    : Your code should be within this block -->
 
 </LinearLayout>

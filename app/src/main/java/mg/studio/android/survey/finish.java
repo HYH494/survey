@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class finish extends AppCompatActivity {
+public class Finish extends AppCompatActivity {
     String[] inputArr;
     Button finishbtn;
     @Override
@@ -23,7 +23,7 @@ public class finish extends AppCompatActivity {
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.finish:
-                    Intent intent = new Intent(finish.this, report.class);
+                    Intent intent = new Intent(Finish.this, Report.class);
                     intent.putExtra("inputArr", inputArr);
                     startActivity(intent);
             }

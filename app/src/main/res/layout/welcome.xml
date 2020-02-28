@@ -12,7 +12,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginRight="40dp"
         android:text="WELCOME TO"
-        android:textColor="#000000"
+        android:textColor="@color/black"
         android:textSize="32sp" />
 
     <TextView
@@ -63,7 +63,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:layout_marginLeft="100dp"
-        android:colorControlActivated="#00ff00"
+        android:colorControlActivated="@color/green"
         android:text="I accept these requests."/>
 
     <Button
@@ -73,9 +73,9 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
-        android:background="#00ff00"
+        android:background="@color/green"
         android:text="LET'S START!"
-        android:textColor="#000000"
+        android:textColor="@color/black"
         android:textSize="20sp" />
     <!-- END    : Your code should be within this block -->
 </LinearLayout>

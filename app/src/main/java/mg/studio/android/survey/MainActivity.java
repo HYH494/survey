@@ -1,6 +1,5 @@
 package mg.studio.android.survey;
 
-
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -33,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.welcome_start:
                     if(count == 1)
                     {
-                        Intent intent = new Intent(MainActivity.this,question_one.class);
+                        Intent intent = new Intent(MainActivity.this,Question_one.class);
                         startActivity(intent);
                     }
 
@@ -41,7 +40,3 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 }
-
-
-
-

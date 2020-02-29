@@ -35,7 +35,7 @@
         android:id="@+id/q6_next"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="300dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:text="NEXT"

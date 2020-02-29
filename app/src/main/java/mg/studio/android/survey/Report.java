@@ -52,6 +52,7 @@ public class Report extends AppCompatActivity {
                 case R.id.report:
                     if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
                         File sdfile = getExternalFilesDir(null);
+                        //File sdfile = Environment.getExternalStorageDirectory();
                         File savedata = new File(sdfile, "savedata.txt");
                         FileOutputStream fout = null;
                         try {

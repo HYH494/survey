@@ -69,7 +69,7 @@
         android:id="@+id/q9_next"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginTop="190dp"
+        android:layout_marginTop="130dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:text="NEXT"

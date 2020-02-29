@@ -57,14 +57,15 @@
         android:layout_marginTop="30dp"
         android:text="- Please follow the step we designed for you and don't skip any questions."
         android:textSize="16sp"/>
+
     <CheckBox
         android:id="@+id/welcome_check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
         android:layout_marginLeft="100dp"
+        android:layout_marginTop="40dp"
         android:colorControlActivated="@color/green"
-        android:text="I accept these requests."/>
+        android:text="I accept these requests." />
 
     <Button
         android:id="@+id/welcome_start"

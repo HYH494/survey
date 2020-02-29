@@ -1,5 +1,6 @@
 package mg.studio.android.survey;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
@@ -7,8 +8,10 @@ import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
+import android.text.TextUtils;
 import android.text.method.ScrollingMovementMethod;
 import android.view.Gravity;
 import android.view.View;
@@ -46,20 +49,22 @@ public class Report extends AppCompatActivity {
         button.setOnClickListener(ButtonClick);
     }
     View.OnClickListener ButtonClick = new View.OnClickListener() {
+        @RequiresApi(api = Build.VERSION_CODES.KITKAT)
         @Override
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.report:
                     if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
                         File sdfile = getExternalFilesDir(null);
-                        //File sdfile = Environment.getExternalStorageDirectory();
-                        File savedata = new File(sdfile, "savedata.txt");
                         FileOutputStream fout = null;
+                        File savedata = new File(sdfile,"savedata.txt");
                         try {
-                            fout = new FileOutputStream(savedata);
+                            fout = new FileOutputStream(savedata,true);
                             for(int i = 0;i < 12;i++){
                                 int temp = i+1;
                                 String input = "{Question:"+temp+",Answer:'"+inputArr[i]+"'}\n";
+                                if(i == 11)
+                                    input = input + "\n";
                                 fout.write(input.getBytes());
                             }
                             fout.flush();
@@ -69,6 +74,8 @@ public class Report extends AppCompatActivity {
                             e.printStackTrace();
                         }
                     }
+                    else
+                        Toast.makeText(Report.this,"FAILED TO SAVE!",Toast.LENGTH_SHORT).show();
             }
         }
     };

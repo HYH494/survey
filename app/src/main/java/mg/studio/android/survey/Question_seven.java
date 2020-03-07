@@ -9,9 +9,9 @@ import android.widget.*;
 
 public class Question_seven extends AppCompatActivity {
     Button q7_next;
-    int count = 0;
     String[] inputArr;
     String q7input;
+    RadioButton q7_iphone;
     private  RadioGroup  radioGroup = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,8 @@ public class Question_seven extends AppCompatActivity {
         radioGroup=(RadioGroup)findViewById(R.id.q7_radioGroupId);
         radioGroup.setOnCheckedChangeListener(RadioClick);
         inputArr = getIntent().getStringArrayExtra("inputArr");
+        q7_iphone = (RadioButton) findViewById(R.id.q7_opuse12);
+        q7input = q7_iphone.getText().toString();
     }
     private RadioGroup.OnCheckedChangeListener RadioClick=new RadioGroup.OnCheckedChangeListener() {
         @Override
@@ -29,7 +31,6 @@ public class Question_seven extends AppCompatActivity {
             int id= group.getCheckedRadioButtonId();
             switch (group.getCheckedRadioButtonId()) {
                 default:
-                    count += 1;
                     RadioButton e = (RadioButton) findViewById(id);
                     q7input = e.getText().toString();
                     break;
@@ -41,14 +42,10 @@ public class Question_seven extends AppCompatActivity {
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.q7_next:
-                    if(count > 0)
-                    {
-                        Intent intent = new Intent(Question_seven.this,Question_eight.class);
-                        intent.putExtra("inputArr", new String[]{inputArr[0],inputArr[1],
-                                inputArr[2],inputArr[3],inputArr[4],inputArr[5],q7input});
-                        startActivity(intent);
-                    }
-
+                    Intent intent = new Intent(Question_seven.this, Question_eight.class);
+                    intent.putExtra("inputArr", new String[]{inputArr[0], inputArr[1],
+                            inputArr[2], inputArr[3], inputArr[4], inputArr[5], q7input});
+                    startActivity(intent);
             }
         }
     };

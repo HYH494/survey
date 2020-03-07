@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
     <!--  Start : Your code should be within this block -->
     <TextView
+        android:id = "@+id/t_que8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -16,17 +17,21 @@
         android:textColor="@color/black"/>
 
     <TextView
+        android:id = "@+id/t_que8t"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="60dp"
         android:layout_marginRight="60dp"
         android:layout_marginTop="40dp"
+        android:layout_below="@+id/t_que8"
         android:text="Which brand of phone will you choose if are going to buy a new one?"
         android:textSize="20sp" />
     <RadioGroup
         android:id="@+id/q8_radioGroupId"
         android:layout_width="wrap_content"
+        android:layout_below="@+id/t_que8t"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
         android:orientation="vertical">
         <RadioButton
             android:id="@+id/q8_iphone"
@@ -34,6 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="105dp"
+            android:checked="true"
             android:colorControlActivated="@color/green"
             android:text="Iphone"
             android:textColor="@color/black"/>
@@ -70,6 +76,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="105dp"
+            android:layout_below="@+id/t_que8"
             android:colorControlActivated="@color/green"
             android:text="Lenovo"
             android:textColor="@color/black"/>
@@ -99,10 +106,12 @@
         android:layout_marginTop="40dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/q8_radioGroupId"
         android:text="NEXT"
         android:textSize="20sp"
         android:background="@color/green"
         android:textColor="@color/black"/>
     <!-- END    : Your code should be within this block -->
 
-</LinearLayout>
+</RelativeLayout>

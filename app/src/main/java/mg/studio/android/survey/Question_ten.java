@@ -9,9 +9,9 @@ import android.widget.*;
 
 public class Question_ten extends AppCompatActivity {
     Button q10_next;
-    int count = 0;
     String[] inputArr;
     String q10input;
+    RadioButton q10_under18;
     private  RadioGroup  radioGroup = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,8 @@ public class Question_ten extends AppCompatActivity {
         radioGroup=(RadioGroup)findViewById(R.id.q10_radioGroupId);
         radioGroup.setOnCheckedChangeListener(RadioClick);
         inputArr = getIntent().getStringArrayExtra("inputArr");
+        q10_under18 = (RadioButton) findViewById(R.id.q10_under18);
+        q10input = q10_under18.getText().toString();
     }
     private RadioGroup.OnCheckedChangeListener RadioClick=new RadioGroup.OnCheckedChangeListener() {
         @Override
@@ -29,7 +31,6 @@ public class Question_ten extends AppCompatActivity {
             int id= group.getCheckedRadioButtonId();
             switch (group.getCheckedRadioButtonId()) {
                 default:
-                    count += 1;
                     RadioButton e = (RadioButton) findViewById(id);
                     q10input = e.getText().toString();
                     break;
@@ -41,15 +42,11 @@ public class Question_ten extends AppCompatActivity {
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.q10_next:
-                    if(count > 0)
-                    {
-                        Intent intent = new Intent(Question_ten.this,Question_eleven.class);
-                        intent.putExtra("inputArr", new String[]{inputArr[0],inputArr[1],
-                                inputArr[2],inputArr[3],inputArr[4],inputArr[5],inputArr[6],
-                                inputArr[7],inputArr[8],q10input});
-                        startActivity(intent);
-                    }
-
+                    Intent intent = new Intent(Question_ten.this, Question_eleven.class);
+                    intent.putExtra("inputArr", new String[]{inputArr[0], inputArr[1],
+                            inputArr[2], inputArr[3], inputArr[4], inputArr[5], inputArr[6],
+                            inputArr[7], inputArr[8], q10input});
+                    startActivity(intent);
             }
         }
     };

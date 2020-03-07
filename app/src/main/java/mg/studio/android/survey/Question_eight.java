@@ -9,9 +9,9 @@ import android.widget.*;
 
 public class Question_eight extends AppCompatActivity {
     Button q8_next;
-    int count = 0;
     String[] inputArr;
     String q8input;
+    RadioButton q8_iphone;
     private  RadioGroup  radioGroup = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,8 @@ public class Question_eight extends AppCompatActivity {
         radioGroup=(RadioGroup)findViewById(R.id.q8_radioGroupId);
         radioGroup.setOnCheckedChangeListener(RadioClick);
         inputArr = getIntent().getStringArrayExtra("inputArr");
+        q8_iphone = (RadioButton) findViewById(R.id.q8_iphone);
+        q8input = q8_iphone.getText().toString();
     }
     private RadioGroup.OnCheckedChangeListener RadioClick=new RadioGroup.OnCheckedChangeListener() {
         @Override
@@ -29,7 +31,6 @@ public class Question_eight extends AppCompatActivity {
             int id= group.getCheckedRadioButtonId();
             switch (group.getCheckedRadioButtonId()) {
                 default:
-                    count += 1;
                     RadioButton e = (RadioButton) findViewById(id);
                     q8input = e.getText().toString();
                     break;
@@ -41,13 +42,10 @@ public class Question_eight extends AppCompatActivity {
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.q8_next:
-                    if(count > 0)
-                    {
-                        Intent intent = new Intent(Question_eight.this,Question_nine.class);
-                        intent.putExtra("inputArr", new String[]{inputArr[0],inputArr[1],
+                    Intent intent = new Intent(Question_eight.this,Question_nine.class);
+                    intent.putExtra("inputArr", new String[]{inputArr[0],inputArr[1],
                                 inputArr[2],inputArr[3],inputArr[4],inputArr[5],inputArr[6],q8input});
-                        startActivity(intent);
-                    }
+                    startActivity(intent);
 
             }
         }

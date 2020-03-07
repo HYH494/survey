@@ -9,8 +9,8 @@ import android.widget.*;
 
 public class Question_two extends AppCompatActivity {
     Button q2_next;
-    int count = 0;
     String q1input,q2input;
+    RadioButton q2_under1000;
     private  RadioGroup  radioGroup = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,8 @@ public class Question_two extends AppCompatActivity {
         radioGroup.setOnCheckedChangeListener(RadioClick);
         Intent i = getIntent();
         q1input = i.getStringExtra("q1input");
+        q2_under1000 = (RadioButton) findViewById(R.id.q2_under1000);
+        q2input = q2_under1000.getText().toString();
     }
 
     private RadioGroup.OnCheckedChangeListener RadioClick=new RadioGroup.OnCheckedChangeListener() {
@@ -30,7 +32,6 @@ public class Question_two extends AppCompatActivity {
             int id= group.getCheckedRadioButtonId();
             switch (group.getCheckedRadioButtonId()) {
                 default:
-                    count += 1;
                     RadioButton e = (RadioButton) findViewById(group.getCheckedRadioButtonId());
                     q2input = e.getText().toString();
                     break;
@@ -42,16 +43,9 @@ public class Question_two extends AppCompatActivity {
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.q2_next:
-                    if(count > 0)
-                    {
-                        Intent intent = new Intent(Question_two.this,Question_three.class);
-                        //Bundle bundle = new Bundle();
-                        //bundle.putStringArray("inputArr", new String[]{inputArr[0],inputArr[1]});
-                        //intent.putExtras(bundle);
-                        intent.putExtra("inputArr",new String[]{q1input,q2input});
-                        startActivity(intent);
-                    }
-
+                    Intent intent = new Intent(Question_two.this, Question_three.class);
+                    intent.putExtra("inputArr", new String[]{q1input, q2input});
+                    startActivity(intent);
             }
         }
     };

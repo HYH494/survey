@@ -9,9 +9,9 @@ import android.widget.*;
 
 public class Question_three extends AppCompatActivity {
     Button q3_next;
-    int count = 0;
-    String q3input;//q1input,q2input,
+    String q3input;
     String[] inputArr;
+    RadioButton q3_2G;
     private  RadioGroup  radioGroup = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,10 +21,9 @@ public class Question_three extends AppCompatActivity {
         q3_next.setOnClickListener(ButtonClick);
         radioGroup=(RadioGroup)findViewById(R.id.q3_radioGroupId);
         radioGroup.setOnCheckedChangeListener(RadioClick);
-        //String[]
         inputArr = getIntent().getStringArrayExtra("inputArr");
-        //q1input = inputArr[0];
-        //q2input = inputArr[1];
+        q3_2G = (RadioButton) findViewById(R.id.q3_2G);
+        q3input = q3_2G.getText().toString();
     }
     private RadioGroup.OnCheckedChangeListener RadioClick=new RadioGroup.OnCheckedChangeListener() {
         @Override
@@ -32,7 +31,6 @@ public class Question_three extends AppCompatActivity {
             int id= group.getCheckedRadioButtonId();
             switch (group.getCheckedRadioButtonId()) {
                 default:
-                    count += 1;
                     RadioButton e = (RadioButton) findViewById(id);
                     q3input = e.getText().toString();
                     break;
@@ -44,16 +42,9 @@ public class Question_three extends AppCompatActivity {
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.q3_next:
-                    if(count > 0)
-                    {
-                        Intent intent = new Intent(Question_three.this,Question_four.class);
-                        //Bundle bundle = new Bundle();
-                        //bundle.putStringArray("inputArr", new String[]{inputArr[0],inputArr[1],inputArr[2]});
-                        //intent.putExtras(bundle);
-                        intent.putExtra("inputArr", new String[]{inputArr[0],inputArr[1],q3input});//q1input,q2input
-                        startActivity(intent);
-                    }
-
+                    Intent intent = new Intent(Question_three.this, Question_four.class);
+                    intent.putExtra("inputArr", new String[]{inputArr[0], inputArr[1], q3input});//q1input,q2input
+                    startActivity(intent);
             }
         }
     };

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
     <!--  Start : Your code should be within this block -->
     <TextView
+        android:id="@+id/t_que6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -16,11 +17,13 @@
         android:textColor="@color/black"/>
 
     <TextView
+        android:id="@+id/t_que6t"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="60dp"
         android:layout_marginRight="50dp"
         android:layout_marginTop="40dp"
+        android:layout_below="@+id/t_que6"
         android:text="What functions do you expect your phone to have in the future?"
         android:textSize="20sp" />
     <EditText
@@ -29,6 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="60dp"
         android:layout_marginRight="60dp"
+        android:layout_below="@+id/t_que6t"
         android:textColor="@color/black"
         android:theme="@color/green"/>
     <Button
@@ -38,11 +42,10 @@
         android:layout_marginTop="300dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:layout_below="@+id/q6_edittext"
         android:text="NEXT"
         android:textSize="20sp"
         android:background="@color/green"
         android:textColor="@color/black"/>
-
     <!-- END    : Your code should be within this block -->
-
-</LinearLayout>
+</RelativeLayout>

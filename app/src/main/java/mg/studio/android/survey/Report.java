@@ -66,6 +66,8 @@ public class Report extends AppCompatActivity {
                             fout.flush();
                             fout.close();
                             Toast.makeText(Report.this,"SAVED SUCCESSFULLY!",Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(Report.this, Auto_Question.class);
+                            startActivity(intent);
                         } catch (Exception e) {
                             e.printStackTrace();
                         }

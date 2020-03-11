@@ -1,7 +1,6 @@
 package mg.studio.android.survey;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.util.TypedValue;
@@ -27,15 +26,14 @@ import java.io.InputStreamReader;
 @SuppressWarnings("ResourceType")
 
 public class Auto_Question extends AppCompatActivity {
-    String path;
-    RelativeLayout auto_layout = new RelativeLayout(this);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //Automatically create the RelativeLayout to show the questions and options
+        RelativeLayout auto_layout = new RelativeLayout(this);
         auto_layout.setLayoutParams(new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
         auto_layout.setId(0);
-        path = this.getExternalFilesDir(null).getAbsolutePath();
+        String path = this.getExternalFilesDir(null).getAbsolutePath();
         try {
             auto_layout = auto_create(auto_layout, path);
         } catch (JSONException e) {
@@ -46,7 +44,7 @@ public class Auto_Question extends AppCompatActivity {
 
     //This can be used to automatically create Layout as well as get the problems from the file "sample.json" under assets
     public RelativeLayout auto_create(final RelativeLayout auto_layout, final String path) throws JSONException {
-        String get_message = "";
+        String get_message;
         StringBuilder sb = new StringBuilder();
         AssetManager assets = this.getAssets();
         try {
@@ -69,36 +67,35 @@ public class Auto_Question extends AppCompatActivity {
         //automatically create
         final int que_num = Integer.parseInt(len);
         TextView[] que_contents = new TextView[que_num];
-        final RadioGroup que_options[] = new RadioGroup[que_num];
         RelativeLayout.LayoutParams[] que_tParams = new RelativeLayout.LayoutParams[que_num];
+        final RadioGroup que_options[] = new RadioGroup[que_num];
         RelativeLayout.LayoutParams[] que_oParams = new RelativeLayout.LayoutParams[que_num];
 
         //cycle for len times to create layout and buttons
         for (int i = 0; i < que_num; i++) {
             //To get the info of the questions such as the type, question and options
             JSONObject que = questions.getJSONObject(i);
+            String type = que.getString("type");
             String que_question = que.getString("question");
-            String type = survey.getString("type");
             JSONArray que_option = que.getJSONArray("options");
             String[] que_choose = new String[que_option.length()];
 
-            for (int j = 0; j < que_option.length(); j++)
-                que_choose[j] = que_option.getJSONObject(j).getString("" + j + 1);
+            for (int j = 0; j < que_option.length(); j++) {
+                que_choose[j] = que_option.getJSONObject(j).getString(j + 1 + "");
+            }
 
             //automatically create TextView and setText
             que_contents[i] = new TextView(this);
-            int temp = i + 6;
-            que_contents[i].setId(temp);
+            que_contents[i].setId(i + 6);
             que_tParams[i] = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
 
             //i = 0, create directly, i > 0, set marginTop = 10
-            if (i == 0)
+            if (i > 0) {
+                que_tParams[i].addRule(RelativeLayout.BELOW, que_options[i - 1].getId());
+                que_tParams[i].setMargins(dpreset(8), dpreset(15), 0, 0);
+            } else if (i == 0)
                 que_tParams[i].setMargins(dpreset(8), 0, 0, 0);
-            else {
-                int tempnum = i - 1;
-                que_tParams[i].addRule(RelativeLayout.BELOW, que_options[tempnum].getId());
-                que_tParams[i].setMargins(dpreset(8), dpreset(10), 0, 0);
-            }
+
             que_contents[i].setLayoutParams(que_tParams[i]);
             que_contents[i].setText(que_question);
             que_contents[i].setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
@@ -108,14 +105,12 @@ public class Auto_Question extends AppCompatActivity {
             que_oParams[i] = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
             que_oParams[i].addRule(RelativeLayout.BELOW, que_contents[i].getId());
             que_options[i].setLayoutParams(que_oParams[i]);
-            int tempnum = i + 60;
-            que_options[i].setId(tempnum);
+            que_options[i].setId(i + 60);
             int opt_num = que_option.length();
             RadioButton[] opt_choose = new RadioButton[opt_num];
             for (int k = 0; k < opt_num; k++) {
                 opt_choose[k] = new RadioButton(this);
-                int tempnum1 = k + 1;
-                opt_choose[k].setId(que_contents[i].getId() + tempnum1);
+                opt_choose[k].setId(que_contents[i].getId() + k + 1);
                 opt_choose[k].setText(que_choose[k]);
                 que_options[i].addView(opt_choose[k]);
             }
@@ -127,8 +122,7 @@ public class Auto_Question extends AppCompatActivity {
         //create button and function
         Button Finish = new Button(this);
         Finish.setId(666);
-        RelativeLayout.LayoutParams btn_Params;
-        btn_Params = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+        RelativeLayout.LayoutParams btn_Params = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
         btn_Params.setMargins(0, dpreset(540), 0, 0);
         btn_Params.addRule(RelativeLayout.CENTER_HORIZONTAL, RelativeLayout.TRUE);
         Finish.setLayoutParams(btn_Params);
@@ -136,6 +130,7 @@ public class Auto_Question extends AppCompatActivity {
         Finish.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
 
         Finish.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
 
@@ -150,10 +145,8 @@ public class Auto_Question extends AppCompatActivity {
                 }
 
                 if (tempnum2 == 1) {
-                    Toast ts = Toast.makeText(getBaseContext(), "Please select the answers!", Toast.LENGTH_LONG);
-                    ts.show();
-                }
-                else {
+                    Toast.makeText(getBaseContext(), "Please select the answers!", Toast.LENGTH_LONG).show();
+                } else {
                     RadioButton[] que_answer = new RadioButton[que_num];
                     for (int i = 0; i < que_num; i++)
                         que_answer[i] = (RadioButton) findViewById(que_done[i]);
@@ -169,20 +162,21 @@ public class Auto_Question extends AppCompatActivity {
                         e.printStackTrace();
                     }
                     try {
-                        String Json = "{";
+                        String tojson = "{";
                         for (int i = 1; i < result.length + 1; i++) {
                             if (i < result.length)
-                                Json = Json + "\"question" + i + "\":" + "\"" + result[i - 1] + "\"" + ",";
+                                tojson = tojson + "\"question" + i + "\":" + "\"" + result[i - 1] + "\"" + ",";
                             if (i == result.length)
-                                Json = Json + "\"question" + i + "\":" + "\"" + result[i - 1] + "\"" + "}\n";
+                                tojson = tojson + "\"question" + i + "\":" + "\"" + result[i - 1] + "\"" + "}\n";
                         }
-                        fout.write(Json.getBytes());
+                        fout.write(tojson.getBytes());
                         fout.flush();
                         fout.close();
-                        Toast.makeText(getBaseContext(), "Save successfully!", Toast.LENGTH_LONG).show();
+
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
+                    Toast.makeText(getBaseContext(), "Save successfully!", Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -191,6 +185,6 @@ public class Auto_Question extends AppCompatActivity {
     }
 
     public int dpreset(float dpValue) {
-            return (int) (dpValue * this.getResources().getDisplayMetrics().density + 0.5f);
+        return (int) (dpValue * this.getResources().getDisplayMetrics().density + 0.5f);
     }
 }

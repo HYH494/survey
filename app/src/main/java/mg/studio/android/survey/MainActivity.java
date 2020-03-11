@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.welcome_start:
                     if (count == 1) {
-                        Intent intent = new Intent(MainActivity.this, Question_one.class);
+                        Intent intent = new Intent(MainActivity.this, Auto_Question.class);
                         startActivity(intent);
                     }
 

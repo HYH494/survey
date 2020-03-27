@@ -1,38 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AndroidConfiguredLogFilters">
-    <filters>
-      <filter>
-        <option name="logLevel" value="verbose" />
-        <option name="logMessagePattern" value="" />
-        <option name="logTagPattern" value="MainActivity" />
-        <option name="name" value="aa" />
-        <option name="packageNamePattern" value="" />
-        <option name="pid" value="" />
-      </filter>
-    </filters>
-  </component>
   <component name="AndroidLayouts">
     <shared>
       <config>
         <device id="pixel_2" />
+        <device id="7in WSVGA (Tablet)" />
+        <device id="Nexus 7" />
+        <device id="3.7in WVGA (Nexus One)" />
         <device id="pixel" />
+        <target>android-29</target>
       </config>
     </shared>
   </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_LOG_LEVEL" value="info" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Firebase" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82ce1556-f56a-4338-9c43-0b73a510c9f5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/sample.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/sample.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/mg/studio/android/survey/Auto_Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/mg/studio/android/survey/Auto_Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/mg/studio/android/survey/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/mg/studio/android/survey/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/mg/studio/android/survey/Permission" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/mg/studio/android/survey/Permission" afterDir="false" />
-    </list>
+    <list default="true" id="d0834af7-4699-473d-8a48-0cfdadcf2536" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,46 +33,42 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <projects_view>
-          <tree_state>
-            <expand />
-            <select />
-          </tree_state>
-        </projects_view>
+        <projects_view />
       </state>
     </system>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="resourceFile" />
+      </list>
+    </option>
   </component>
-  <component name="ProjectId" id="1YQSwRHgk6KodsFyHIAMI8di7t8" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectId" id="1ZKyQhsOTRTT1snBV41SOjO7IR3" />
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="SDK Location" />
-    <property name="project.structure.proportion" value="0.17" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="android.sdk.path" value="D:/Android/AndroidSDK" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="mg.studio.android.survey" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\AndroidStudio\MiniAPP\app\src\main\res\values" />
+      <recent name="E:\AndroidStudio\MiniAPP\app\src\main\res\layout" />
     </key>
     <key name="android.template.packageName">
-      <recent name="mg.studio.android.survey" />
+      <recent name="com.example.miniapp" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="groovy.util.GroovyTestCase" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.miniapp" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\AndroidStudio\test\survey\survey\app\src\main\res\layout" />
-      <recent name="E:\AndroidStudio\test\survey\survey\app\src\main\java\mg\studio\android\survey" />
-      <recent name="E:\AndroidStudio\survey-master-null\survey-master\app\src\main\res\drawable" />
+      <recent name="E:\AndroidStudio\MiniAPP\app\src\main\res\layout" />
+      <recent name="E:\AndroidStudio\MiniAPP\app\src\main\res\layout\layout-1280x800" />
+      <recent name="E:\AndroidStudio\MiniAPP\app\src\main\res\drawable-v24" />
+      <recent name="E:\AndroidStudio\MiniAPP\app\src\main\res\drawable" />
+      <recent name="E:\AndroidStudio\MiniAPP\app\src\main\res\mipmap-xhdpi" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -167,25 +148,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="82ce1556-f56a-4338-9c43-0b73a510c9f5" name="Default Changelist" comment="" />
-      <created>1581480336728</created>
+      <changelist id="d0834af7-4699-473d-8a48-0cfdadcf2536" name="Default Changelist" comment="" />
+      <created>1584602065574</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1581480336728</updated>
+      <updated>1584602065574</updated>
     </task>
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>

@@ -1,33 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="mg.studio.android.survey">
-
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    package="com.example.miniapp">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Survey"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Auto_Question"></activity>
-        <activity android:name=".Report" />
-        <activity android:name=".Question_two" />
-        <activity android:name=".Question_twelve" />
-        <activity android:name=".Question_three" />
-        <activity android:name=".Question_ten" />
-        <activity android:name=".Question_six" />
-        <activity android:name=".Question_seven" />
-        <activity android:name=".Question_one" />
-        <activity android:name=".Question_nine" />
-        <activity android:name=".Question_four" />
-        <activity android:name=".Question_five" />
-        <activity android:name=".Question_eleven" />
-        <activity android:name=".Question_eight" />
-        <activity android:name=".Finish" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainFace"></activity>
+        <activity android:name=".FindPwd" />
+        <activity android:name=".Register" />
+        <activity android:name=".Login" />
+        <activity android:name=".Welcome">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,7 +1,7 @@
 # Survey Application Description
 
 ## The Icon of the Survey application is as the following:
-<img src="https://github.com/HYH494/survey/tree/master/app/src/main/res/drawable/survey.png? raw=true" width = 20% height = 20%/>
+<img src="https://github.com/HYH494/survey/tree/master/app/src/main/res/drawable/survey.png? raw=true"/>
 ## These are the guide of how to use the Survey Applocation
 Step1: Set the login pattern lock.
 
@@ -25,13 +25,18 @@ Step5: Unlock the Survey Application and exit or do another questionnaire.
 ## Example steps of using the Survey Application
 Step1: Set the login pattern lock.
 <img src="https://github.com/HYH494/survey/blob/master/app/src/main/res/runstep/setlock.jpg? raw=true" width = 20% height = 20%/>
+
 Step2: Scan the QR code to get the questionnaire.
 <img src="https://github.com/HYH494/survey/blob/master/app/src/main/res/runstep/toscan.jpg? raw=true" width = 20% height = 20%/>
+
 <img src="https://github.com/HYH494/survey/blob/master/app/src/main/res/runstep/scancode.jpg? raw=true" width = 20% height = 20%/>
+
 Step3: Finish the filling of the queationnaire.
 <img src="https://github.com/HYH494/survey/blob/master/app/src/main/res/runstep/fill.jpg? raw=true" width = 20% height = 20%/>
+
 Step4: Finish the survey and store it in the storage.
 <img src="https://github.com/HYH494/survey/blob/master/app/src/main/res/runstep/finish.jpg? raw=true" width = 20% height = 20%/>
+
 ## Functions to be finish
 1. Local questionnaire
 

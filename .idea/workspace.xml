@@ -2,22 +2,20 @@
 <project version="4">
   <component name="AndroidLayouts">
     <shared>
-      <config>
-        <device id="pixel_2" />
-        <device id="7in WSVGA (Tablet)" />
-        <device id="Nexus 7" />
-        <device id="3.7in WVGA (Nexus One)" />
-        <device id="pixel" />
-        <target>android-29</target>
-      </config>
+      <config />
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="info" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Firebase" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0834af7-4699-473d-8a48-0cfdadcf2536" name="Default Changelist" comment="" />
+    <list default="true" id="65b9236c-69a9-4e7d-aa73-8a3ffcf9c618" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qin/imagezxlingdemo/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qin/imagezxlingdemo/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_show_json.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_show_json.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_time.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_time.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,34 +39,37 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="resourceFile" />
       </list>
     </option>
   </component>
-  <component name="ProjectId" id="1ZKyQhsOTRTT1snBV41SOjO7IR3" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1ZIKwC2e1Pnfd6Vta2PJbG24Nmz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="android.sdk.path" value="D:/Android/AndroidSDK" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="000003f58f8d094e" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-03-28T04:31:23.089Z" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="android.sdk.path" value="D:/and_sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../MiniAPP" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\AndroidStudio\MiniAPP\app\src\main\res\values" />
-      <recent name="E:\AndroidStudio\MiniAPP\app\src\main\res\layout" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WORD\andriod\QRcode\QRcode\imagezxlingDemo\app\src\main\res\layout" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.qin.imagezxlingdemo" />
     </key>
     <key name="android.template.packageName">
-      <recent name="com.example.miniapp" />
+      <recent name="com.qin.imagezxlingdemo" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.example.miniapp" />
+      <recent name="com.qin.imagezxlingdemo" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\AndroidStudio\MiniAPP\app\src\main\res\layout" />
-      <recent name="E:\AndroidStudio\MiniAPP\app\src\main\res\layout\layout-1280x800" />
-      <recent name="E:\AndroidStudio\MiniAPP\app\src\main\res\drawable-v24" />
-      <recent name="E:\AndroidStudio\MiniAPP\app\src\main\res\drawable" />
-      <recent name="E:\AndroidStudio\MiniAPP\app\src\main\res\mipmap-xhdpi" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\AndroidApp\listview\QRcode\QRcode\imagezxlingDemo\app\src\main\res\mipmap-hdpi" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -148,12 +149,25 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d0834af7-4699-473d-8a48-0cfdadcf2536" name="Default Changelist" comment="" />
-      <created>1584602065574</created>
+      <changelist id="65b9236c-69a9-4e7d-aa73-8a3ffcf9c618" name="Default Changelist" comment="" />
+      <created>1584521403161</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1584602065574</updated>
+      <updated>1584521403161</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
